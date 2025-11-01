@@ -3,23 +3,56 @@
 
 <head>
   <meta charset="utf-8">
-  <title>CS208 - Starter Code (UPDATE ME)!</title>
+  <title>10.03 Lab</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h1>HTML Rocks!!</h1>
-  <ul>
-  <li><a href="/hello">Click here to say hello</a></li>
-  <li><button id="hello-link">Click Me!</button></li>
-  <li><button id="joke-button">Dad Joke!</button></li>
+  <h1>Starting Lineup</h1>
+  <form id="lineup">
+    <p>
+      <fieldset>
+        <legend>Status:</legend>
+        <input type="radio" id="Draft" name="Status" value="Draft"/>
+        <label for="Draft">Draft</label>
+        <input type="radio" id="Final" name="Status" value="Final" checked/>
+        <label for="Final">Final</label>
+      </fieldset>
+    </p>
+    <p>
+      <label for="Date">Date:</label>
+      <select id="Date" name="gameDate">
+        <option value="March 20">March 20</option>
+        <option value="March 24">March 24</option>
+        <option value="April 2">April 2</option>
+        <option value="April 6">April 6</option>
+        <option value="April 13">April 13</option>
+      </select>
+    </p>
+    <p>
+      <fieldset>
+        <legend>Players:</legend>
+        <input type="checkbox" id="Aar" name="Player" value="Aarav Agarwal"/>
+        <label for="Aar">Aarav Agarwal</label><br>
+        <input type="checkbox" id="Ava" name="Player" value="Ava Johnson"/>
+        <label for="Ava">Ava Johnson</label><br>
+        <input type="checkbox" id="Jul" name="Player" value="Julio Ortiz"/>
+        <label for="Jul">Julio Ortiz</label><br>
+        <input type="checkbox" id="Lia" name="Player" value="Liam Rubio"/>
+        <label for="Lia">Liam Rubio</label><br>
+        <input type="checkbox" id="Emm" name="Player" value="Emma Witherspoon"/>
+        <label for="Emm">Emma Witherspoon</label>
+      </fieldset>
+    </p>
+    <p>
+      <input type="submit" value="Submit"/>
+    </p>
+  </form>
+  <div id="resultBox">
+  </div>
   <script src="script.js"></script>
-  </ul>
-  <img src="funny.png" alt="Funny Image" width="300" height="200">
-
-  <h2 id="joke-display"></h2>
 </body>
 
 </html>
